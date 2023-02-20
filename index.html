@@ -30,34 +30,38 @@
 	</script>
 	<style>
 		body {
-			background-color: purple;
-			color: limegreen;
-			font-family: cursive;
-		}
-		button {
 			background-color: black;
-			border-width: 50px;
-			color: orange;
-			border-radius: 50px;
-			border-color: yellow;
+			color: blanchedalmond;
+			font-family: cursive;
 			font-size: 30px;
-			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 		}
+
+		button {
+			background-color: blanchedalmond;
+			border-width: 10px;
+			color: black;
+			border-radius: 10px;
+			border-color: black;
+			font-size: 30px;
+			font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		}
+
 		#searchForm {
-			background-color: aquamarine;
+			background-color: olivedrab;
 		}
 	</style>
 </head>
 
 <body>
 
-	<form id="searchForm">
+	<form id="searchForm" method="get">
 		<!-- TODO: add form elements -->
 		<input type="text" required name="q">
 		<label><input type="radio" name="engine" value="google">Google</label>
 		<label><input type="radio" name="engine" value="duckDuckGo">DuckDuckGo</label>
 		<label><input type="radio" name="engine" value="bing">Bing</label>
-		<label><input type="radio" name="engine" value="ask">Ask</label>
+		<label><input type="radio" name="engine" value="ask">Ask</label><br>
+		<br>
 		<button id="submit">Go!</button>
 	</form>
 
